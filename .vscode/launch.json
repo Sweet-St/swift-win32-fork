@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-win32-fork}",
+            "name": "Debug UICatalog",
+            "program": "${workspaceFolder:swift-win32-fork}/.build/debug/UICatalog",
+            "preLaunchTask": "swift: Build Debug UICatalog"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-win32-fork}",
+            "name": "Release UICatalog",
+            "program": "${workspaceFolder:swift-win32-fork}/.build/release/UICatalog",
+            "preLaunchTask": "swift: Build Release UICatalog"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-win32-fork}",
+            "name": "Debug Calculator",
+            "program": "${workspaceFolder:swift-win32-fork}/.build/debug/Calculator",
+            "preLaunchTask": "swift: Build Debug Calculator"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-win32-fork}",
+            "name": "Release Calculator",
+            "program": "${workspaceFolder:swift-win32-fork}/.build/release/Calculator",
+            "preLaunchTask": "swift: Build Release Calculator"
+        }
+    ]
+}
