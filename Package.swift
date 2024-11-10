@@ -15,14 +15,10 @@ let SwiftWin32: Package =
             .executable(name: "Calculator", targets: ["Calculator"]),
           ],
           dependencies: [
-            .package(url: "https://github.com/apple/swift-log.git",
-                     .upToNextMajor(from: "1.4.3")),
-            .package(url: "https://github.com/apple/swift-collections.git",
-                     .upToNextMinor(from: "1.0.0")),
-            .package(url: "https://github.com/compnerd/cassowary.git",
-                     branch: "main"),
-            .package(url: "https://github.com/compnerd/swift-com.git",
-                     revision: "ebbc617d3b7ba3a2023988a74bebd118deea4cc5"),
+            .package(path: "Packages/swift-log"),
+            .package(path: "Packages/swift-collections"),
+            .package(path: "Packages/cassowary"),
+            .package(path: "Packages/SwiftCOM"),
           ],
           targets: [
             .target(name: "CoreAnimation",
@@ -37,7 +33,7 @@ let SwiftWin32: Package =
                       .product(name: "OrderedCollections",
                                package: "swift-collections"),
                       .product(name: "cassowary", package: "cassowary"),
-                      .product(name: "SwiftCOM", package: "swift-com"),
+                      .product(name: "SwiftCOM", package: "SwiftCOM"),
                     ],
                     path: "Sources/SwiftWin32",
                     exclude: [
